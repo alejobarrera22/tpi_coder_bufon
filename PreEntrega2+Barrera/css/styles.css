@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital@0;1&display=swap');
+
+/* ESTILOS GENERALES A TODAS LAS PAGINAS */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(98, 148, 96);
+    border-bottom: solid 4px rgb(79, 108, 55);
+}
+
+nav ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.isologo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-brand{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
+
+
+li{
+    margin: 2px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    text-align: space-around;
+    padding: 3px;
+}
+
+li a{
+    text-decoration: none;
+    transition: all .5s ease;
+    color: #fff;
+    font-family: "inter", sans-serif;
+    line-height: 1;
+    font-weight: 1000;
+    font-size: large;
+    background-color : transparent;
+    padding: 10px;
+    border-radius: 4px;font-size: 17px;
+}
+
+
+.nav-item{
+    border: 3px solid white;
+    font-size: 14px;
+    background-color : transparent;
+    padding: 7px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.nav-item:hover{
+    color: #001F3F;
+    background-color: rgb(150, 190, 140);
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.titulo-pri{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    letter-spacing: 7px;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.redes{
+    width: 25px;
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(150, 190, 140);
+    border-top: solid 4px rgb(79, 108, 55);
+}
+
+
+
+/* ESTILOS PAGINA PRINCIPAL */
+
+h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.subtitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.destacada{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.destacada img{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+
+
+
+/* ESTILOS PAGINA OBRAS */
+
+.seccion-obras img{
+    margin: 0px auto;
+    margin-bottom: 15px;
+    height: 250px;
+    width: 250px;
+}
+
+.seccion-obras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.obra img{
+    grid-area: obra-img;
+}
+
+.obra h3{
+    grid-area: obra-h3;
+}
+
+.obra p{
+    grid-area: obra-p;
+    margin-bottom: 2.5em
+}
+
+.obra{
+    display: grid;
+    grid-template-areas:
+    "obra-h3"
+    "obra-img"
+    "obra-p";
+    justify-content: center;
+}
+
+
+/* ESTILOS PAGINA SALAS */
+
+
+.imagen-con-titulo img{
+    height: 250px;
+    width: 250px;
+}
+
+.imagen-con-titulo{
+    margin: 0px auto;
+}
+
+.sala p{
+    grid-area: sala-p;
+    margin-bottom: 2.5em;
+    text-align: center;
+}
+
+.sala h3{
+    grid-area: sala-h3;
+}
+
+.imagen-con-titulo img{
+    grid-area: sala-img;
+}
+
+.sala{
+    display: grid;
+    grid-template-areas: 
+    "sala-img" 
+    "sala-h3"
+    "sala-p";
+    justify-content: center;
+}
+
+
+
+
+
+
+.seccion-festivales img{
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 250px;
+}
+
+.seccion-festivales{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 2fr;
+    margin-left: 25px;
+    place-items: center;
+}
+
+
+
+
+
+.seccion-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    margin-left: 25px;
+    place-items: center;
+}
+
+.seccion-nosotros img{
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    height: 250px;
+}
+
+
+
+
+
+@media (min-width: 500px){
+
+    .contenedor-destacada{
+        border: solid 3px rgb(79, 108, 55);
+        background-color: rgba(150, 190, 140, 0.407);
+    }
+
+    .contenedor-destacada p{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .obra{
+        display: grid;
+        margin:0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "obra-h3      obra-h3"
+        "obra-img     obra-p"
+        ;
+    }
+
+    .obra p{
+        margin-right: 2.5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+    }
+
+    .obra img{
+        height: 300px;
+        width: 300px;
+        margin: 0px auto;
+        margin-bottom: 2.5em;
+    }
+
+    .obra h3{
+        margin-bottom: 0.5em;
+    }
+
+    .sala{
+        display: grid;
+        margin:0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "sala-img   sala-p"
+        ;
+    }
+
+    .sala img{
+        height: 300px;
+        width: 300px;
+        margin: 0px auto;
+        margin-bottom: 2.5em;
+    }
+
+    .sala p{
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+        margin-right: 2.5em;
+    }
+
+    }
+
+@media (min-width: 768px){
+    .obra{
+        background-color: rgba(150, 190, 140, 0.407);
+        border: solid 3px rgb(79, 108, 55);
+        margin-bottom: 1.5em;
+    }
+
+    .obra p{
+        text-align: left;
+    }
+
+    .seccion-obras h1{
+        margin-bottom: 0.5em;
+    }
+
+    .sala{
+        background-color: rgba(150, 190, 140, 0.407);
+        border: solid 3px rgb(79, 108, 55);
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (min-width: 1024px){
+
+    p{
+        font-size: 14px;;
+    }
+
+    .destacada{
+        width: 800px;
+        height: auto;
+        margin: 0px auto;
+    }
+
+    .contenedor-destacada{
+        margin-left: 4.5em;
+        margin-right: 4.5em;
+        margin-bottom: 1.5em;
+        padding-top: 1.5em;
+        border: solid 3px rgb(79, 108, 55);
+        background-color: rgba(150, 190, 140, 0.407);
+        border-radius: 5px;
+    }
+
+    .contenedor-destacada p{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .obra{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+        margin: 1em;
+    }
+
+    .obra img, .obra h3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1.5em;
+        margin-top: 1em;
+    }
+
+    .obra p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 1.5em;
+        text-align: justify;
+    }
+
+    .seccion-salas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sala{
+        display: grid;
+        margin:0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "sala-img"
+        "sala-p"
+        ;
+        height: 700px;
+        margin: 1em;
+        border-radius: 5px;
+        padding-top: 5px;
+    }
+
+    .sala img{
+        height: 250px;
+        width: 250px;
+        margin: 0px auto;
+        margin-bottom: 0.5em;
+    }
+
+    .sala p{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
