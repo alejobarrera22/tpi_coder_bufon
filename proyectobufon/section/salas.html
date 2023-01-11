@@ -10,46 +10,81 @@
 <body>
 
     <header>
-        <nav>
-            <ul class="isologo">
-                <li>
-                    <img class="logo" src="../images/Logo Alejo 2.svg"/>
-                </li>
-                <li>
-                    <h1>EL BUFÓN</h1>
-                </li>
-            </ul>
-            
-            <ul>
-                <li> 
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="../section/obras.html">OBRAS</a>
-                </li>
-                <li>
-                    <a href="../section/salas.html">SALAS</a>
-                </li>
-                <li>
-                    <a href="../section/festivales.html">FESTIVALES</a>
-                </li>
-                <li>
-                    <a href="../section/nosotros.html">SOBRE NOSOTROS</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="titulo-pri navbar-brand" href="../index.html">BUFÓN</a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../section/obras.html">Obras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../section/salas.html">Salas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../section/festivales.html">Festivales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../section/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <h1>SALAS</h1>
+    <h1 class="titulo">SALAS</h1>
+    <div class="seccion-salas">
+        <div class="sala">
+            <div class="imagen-con-titulo">
+                <h3>Maria Castaña</h3>
+                <img src="../images/mariacastana.jpeg" alt="logo del teatro maria castaña que es una puerta">
+            </div>
+            <p>CCI Maria Castaña <br>
+                3518117130 ☎️ (0351)4235529 <br>
+                Tucuman 260. Córdoba <br>
+                ⬇️Videos, Tienda Online, Entradas y más⬇️. <br>
+                linktr.ee/mariacastanateatro.</p>
+        </div>
+    
 
-    <section class="seccion-salas">
-        <img src="../images/mariacastana.jpeg" alt="logo del teatro maria castaña que es una puerta">
-        <img src="../images/labrujula.jpg" alt="">
-        <img src="../images/libertador.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum illo similique quidem impedit repellendus, temporibus unde animi eaque doloremque voluptatum quas, perferendis sequi perspiciatis assumenda! Ducimus dolorem eveniet veniam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum illo similique quidem impedit repellendus, temporibus unde animi eaque doloremque voluptatum quas, perferendis sequi perspiciatis assumenda! Ducimus dolorem eveniet veniam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum illo similique quidem impedit repellendus, temporibus unde animi eaque doloremque voluptatum quas, perferendis sequi perspiciatis assumenda! Ducimus dolorem eveniet veniam.</p>
-    </section>
+        <div class="sala">
+            <div class="imagen-con-titulo">
+                <h3>La brujula</h3>
+                <img src="../images/labrujula.jpg" alt="">
+            </div>           
+            <p>#VeníAlTeatro <br>
+                Ciudad de Córdoba <br>
+                3513010723 <br>
+                Entradas en nuestra web 👇 <br>
+                CONTAMOS CON EL APOYO DEL INSTITUTO <br>
+                NACIONAL DEL TEATRO Y DEL FONDO DESARROLLAR.</p>
+        </div>
+
+        <div class="sala">
+            <div class="imagen-con-titulo">
+                <h3>Del libertador</h3>
+                <img src="../images/libertador.png" alt="">
+            </div>
+            <p>El Teatro del Libertador General San Martín, conocido anteriormente como Teatro Rivera Indarte, es el principal teatro de la ciudad argentina de Córdoba y se destaca como sala de conciertos, ópera y ballet.
+
+                Está ubicado en la Avenida Vélez Sarsfield, entre Duarte Quirós y Boulevar San Juan, es actualmente considerado uno de los teatros con mejor acústica del país.
+                
+                La superficie actual del predio donde está emplazado este teatro es de 3640 m², y de superficie cubierta es de 11.700 m². Cuenta con una capacidad de 1077 ubicaciones.
+                
+                En la actualidad, en este sitio se encuentra la sede de los cuerpos estables de música, canto y danza de la provincia de Córdoba.
+                </p>
+
+        </div>
+    </div>
+
 
     <footer>
         <div>
