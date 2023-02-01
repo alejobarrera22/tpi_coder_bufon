@@ -1,0 +1,33 @@
+.seccion-festivales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        @include size(250px, 250px);
+        margin: 0px auto;
+        margin-bottom: 15px;
+    }
+}
+
+.festival{
+    display: grid;
+    grid-template-areas:
+    "festival-h3"
+    "festival-img"
+    "festival-p";
+    justify-content: center;
+
+    p{
+        grid-area: festival-p;
+        margin-bottom: 2.5em
+    }
+
+    h3{
+        grid-area: festival-h3;
+    }
+
+    img{
+        grid-area: festival-img;
+    }
+}
