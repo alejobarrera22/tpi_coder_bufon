@@ -1,0 +1,26 @@
+.seccion-nosotros img{
+    margin: 0px auto;
+    margin-bottom: 15px;
+    height: 250px;
+    width: 250px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+
+    h3{
+        grid-area: info-h3;
+        text-align: center;
+        text-decoration: underline, solid;
+    }
+
+    p{
+        grid-area: info-p;
+    }
+
+    img{
+        grid-area: info-img;
+    }
+}
