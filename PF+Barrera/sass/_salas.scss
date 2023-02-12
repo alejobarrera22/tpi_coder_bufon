@@ -1,0 +1,28 @@
+.imagen-con-titulo{
+    margin: 0px auto;
+
+    img{
+        @include size(250px, 250px);
+        grid-area: sala-img;
+    }
+}
+
+.sala{
+    display: grid;
+    grid-template-areas: 
+    "sala-img" 
+    "sala-h3"
+    "sala-p";
+    justify-content: center;
+
+    h3{
+        grid-area: sala-h3;
+    }
+
+    p{
+        grid-area: sala-p;
+        margin-bottom: 2.5em;
+        text-align: center;
+        text-decoration: none;
+    }
+}

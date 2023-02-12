@@ -1,0 +1,47 @@
+.datos-obra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        @include size(250px, 250px);
+        margin: 0px auto;
+        margin-bottom: 1em;
+    }
+    
+}
+
+.obra{
+    display: grid;
+    grid-template-areas:
+    "obra-h3"
+    "obra-img"
+    "obra-p";
+    justify-content: center;
+
+    p{
+        grid-area: obra-p;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    h3{
+        grid-area: obra-h3;
+    }
+
+    img{
+        grid-area: obra-img;
+    }
+}
+
+.boton-obras{
+    background-color: $colorTarjeta;
+    border: 2px solid $colorBorde;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 2.5em;
+}

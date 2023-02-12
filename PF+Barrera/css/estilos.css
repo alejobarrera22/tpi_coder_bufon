@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital@0;1&display=swap");
+/* ESTILOS GENERALES A TODAS LAS PAGINAS */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  border-bottom: solid 4px #028174;
+}
+
+header {
+  margin-bottom: 10em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+
+.green {
+  background-color: #c9e2c5;
+}
+
+.navbar-item {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.nav-item:hover {
+  color: black;
+  font-weight: 700;
+  background-color: #028174;
+  border-radius: 5px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e3f0ef;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.titulo-pri {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  letter-spacing: 7px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.redes {
+  width: 40px;
+  padding: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  background-color: #c9e2c5;
+  border-top: solid 4px #028174;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.subtitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.destacada {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.destacada img {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+.datos-obra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.datos-obra img {
+  height: 250px;
+  width: 250px;
+  margin: 0px auto;
+  margin-bottom: 1em;
+}
+
+.obra {
+  display: grid;
+  grid-template-areas: "obra-h3" "obra-img" "obra-p";
+  justify-content: center;
+}
+.obra p {
+  grid-area: obra-p;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.obra h3 {
+  grid-area: obra-h3;
+}
+.obra img {
+  grid-area: obra-img;
+}
+
+.boton-obras {
+  background-color: rgba(186, 255, 201, 0.7);
+  border: 2px solid #028174;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 2.5em;
+}
+
+.imagen-con-titulo {
+  margin: 0px auto;
+}
+.imagen-con-titulo img {
+  height: 250px;
+  width: 250px;
+  grid-area: sala-img;
+}
+
+.sala {
+  display: grid;
+  grid-template-areas: "sala-img" "sala-h3" "sala-p";
+  justify-content: center;
+}
+.sala h3 {
+  grid-area: sala-h3;
+}
+.sala p {
+  grid-area: sala-p;
+  margin-bottom: 2.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.seccion-festivales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccion-festivales img {
+  height: 250px;
+  width: 250px;
+  margin: 0px auto;
+  margin-bottom: 15px;
+}
+
+.festival {
+  display: grid;
+  grid-template-areas: "festival-h3" "festival-img" "festival-p";
+  justify-content: center;
+}
+.festival p {
+  grid-area: festival-p;
+  margin-bottom: 2.5em;
+}
+.festival h3 {
+  grid-area: festival-h3;
+}
+.festival img {
+  grid-area: festival-img;
+}
+
+.seccion-nosotros img {
+  margin: 0px auto;
+  margin-bottom: 15px;
+  height: 250px;
+  width: 250px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+.info h3 {
+  grid-area: info-h3;
+  text-align: center;
+  -webkit-text-decoration: underline, solid;
+          text-decoration: underline, solid;
+}
+.info p {
+  grid-area: info-p;
+}
+.info img {
+  grid-area: info-img;
+}
+
+@media (min-width: 500px) {
+  .contenedor-destacada {
+    border: solid 3px #028174;
+    background-color: rgba(186, 255, 201, 0.7);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .contenedor-destacada p {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .datos-obra a {
+    grid-area: a-obras;
+  }
+  .obra {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "obra-h3      obra-h3" "obra-img     obra-p";
+    border: 2px solid #028174;
+    margin-bottom: 0.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    grid-area: obra;
+  }
+  .obra p {
+    margin-right: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .obra img {
+    height: 275px;
+    width: 275px;
+    margin: 0px auto;
+    margin-bottom: 2.5em;
+  }
+  .obra h3 {
+    margin-bottom: 0.5em;
+  }
+  .boton-obras {
+    background-color: #e3f0ef;
+    border: 2px solid #028174;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sala {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "sala-img   sala-p";
+    border: 2px solid #028174;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .sala img {
+    height: 250px;
+    width: 250px;
+    margin: 0px auto;
+    margin-bottom: 2.5em;
+  }
+  .sala p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2.5em;
+  }
+  .festival p {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .info {
+    border: 2px solid #028174;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .info p {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor-destacada {
+    margin-bottom: 1em;
+  }
+  .obra {
+    background-color: rgba(186, 255, 201, 0.7);
+    border: solid 3px #028174;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .obra p {
+    text-align: left;
+  }
+  .seccion-obras h1 {
+    margin-bottom: 0.5em;
+  }
+  .obra img {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .obra img:hover {
+    transform: scale(1.085);
+  }
+  .obra {
+    transition-property: all;
+    transition-duration: 1s;
+    grid-area: obra;
+  }
+  .obra:hover {
+    transform: scale(1.02);
+  }
+  .boton-obras {
+    background-color: rgba(186, 255, 201, 0.7);
+    border: 3px solid #028174;
+  }
+  .sala {
+    background-color: rgba(186, 255, 201, 0.7);
+    border: solid 3px #028174;
+    margin-bottom: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .sala {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .sala:hover {
+    transform: translateY(-1em);
+  }
+  .festival {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "festival-h3      festival-h3" "festival-img     festival-p";
+  }
+  .festival {
+    background-color: rgba(186, 255, 201, 0.7);
+    border: solid 3px #028174;
+    margin-bottom: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .festival {
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  .festival:hover {
+    transform: scale(1.02);
+  }
+  .info1 {
+    grid-area: info1;
+  }
+  .info2 {
+    grid-area: info2;
+  }
+  .info3 {
+    grid-area: info3;
+  }
+  .info4 {
+    grid-area: info4;
+  }
+  .seccion-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info1 info2" "info3 info4";
+  }
+  .info p {
+    text-align: justify;
+  }
+  .info {
+    background-color: rgba(186, 255, 201, 0.7);
+    border: solid 3px #028174;
+    margin-bottom: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .info {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .info:hover {
+    transform: translateY(-1em);
+  }
+}
+@media (min-width: 992px) {
+  p {
+    font-size: 14px;
+  }
+  .destacada {
+    width: 800px;
+    height: auto;
+    margin: 0px auto;
+  }
+  .contenedor-destacada {
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+    margin-bottom: 1.5em;
+    padding-top: 1.5em;
+    border: solid 3px #028174;
+    background-color: rgba(186, 255, 201, 0.7);
+    border-radius: 5px;
+  }
+  .contenedor-destacada p {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .obra {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin: 1em;
+  }
+  .obra img, .obra h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1.5em;
+    margin-top: 1em;
+  }
+  .obra p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1.5em;
+    text-align: justify;
+  }
+  .datos-obra {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-areas: "obra   a-obras";
+  }
+  .boton-obras {
+    background-color: rgba(186, 255, 201, 0.7);
+    border: solid 3px #028174;
+    border-radius: 5px;
+    height: 390px;
+    width: 90%;
+    margin-top: 2.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .seccion-salas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sala {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sala-img" "sala-p";
+    height: 700px;
+    margin: 1em;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .sala img {
+    height: 250px;
+    width: 250px;
+    margin: 0px auto;
+    margin-bottom: 0.5em;
+  }
+  .sala p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .festival1 {
+    display: grid;
+    margin: 0;
+    margin-bottom: 1.5em;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "festival-h3      festival-h3" "festival-img     festival-p";
+    margin: 1em;
+    border-radius: 5px;
+    padding-top: 5px;
+  }
+  .festival1 img, .festival1 h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1.5em;
+    margin-top: 1em;
+  }
+  .festival1 p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3em;
+    margin-right: 1em;
+    text-align: justify;
+  }
+  .festival2 {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "festival-h3      festival-h3" "festival-p     festival-img";
+    margin: 1em;
+    border-radius: 5px;
+    padding-top: 5px;
+  }
+  .festival2 img, .festival2 h3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-right: 1.5em;
+    margin-top: 1em;
+  }
+  .festival2 p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5em;
+    margin-left: 1em;
+    text-align: right;
+  }
+  .seccion-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "info1 info2 info3 info4";
+  }
+  .info {
+    border-radius: 5px;
+    padding-top: 5px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
